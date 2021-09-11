@@ -16,9 +16,13 @@ public class App
     {
         Alien alien=new Alien();
         alien.setaId(101);
-        alien.setColor("white");
+        alien.setColor("Brown");
         alien.setaName(new AlienName("Peeyoosh","Mani",
                 "Tiwari"));
+        alien.setaId(102);
+        alien.setColor("white");
+        alien.setaName(new AlienName("James","Pal",
+                "Anderson"));
         Configuration configuration=new Configuration().configure()
                 .addAnnotatedClass(Alien.class);
         SessionFactory sessionFactory=configuration.buildSessionFactory();
